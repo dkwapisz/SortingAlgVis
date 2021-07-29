@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="900.0" minWidth="1600.0" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sorting.AppController">
+   <children>
+      <Button fx:id="getRandomsButton" layoutX="1360.0" layoutY="638.0" prefHeight="25.0" prefWidth="220.0" text="Generate Numbers" />
+      <Button fx:id="startButton" layoutX="1360.0" layoutY="378.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="220.0" text="Sort">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <BarChart fx:id="graph" alternativeRowFillVisible="false" animated="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="20.0" layoutY="25.0" legendVisible="false" maxHeight="900.0" maxWidth="1600.0" prefHeight="850.0" prefWidth="1300.0" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" tickLabelsVisible="false" fx:id="xAxis" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="yAxis" side="LEFT" tickLabelsVisible="false" />
+         </yAxis>
+      </BarChart>
+      <ComboBox fx:id="typeComboBox" layoutX="1360.0" layoutY="25.0" prefHeight="25.0" prefWidth="220.0" promptText="Algorithm Type" />
+      <RadioButton fx:id="randomRadioButton" layoutX="1414.0" layoutY="690.0" mnemonicParsing="false" selected="true" text="Random Shuffled">
+         <toggleGroup>
+            <ToggleGroup fx:id="generateGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="upDownRadioButton" layoutX="1414.0" layoutY="715.0" mnemonicParsing="false" text="Upside Down" toggleGroup="$generateGroup" />
+      <Slider fx:id="speedSortingSlider" blockIncrement="1.0" layoutX="1360.0" layoutY="85.0" max="35.0" min="1.0" prefHeight="24.0" prefWidth="220.0" showTickMarks="true" value="35.0" />
+      <Label layoutX="1433.0" layoutY="68.0" text="Sorting Speed" />
+      <TextField fx:id="listSize" alignment="CENTER" layoutX="1360.0" layoutY="145.0" prefHeight="25.0" prefWidth="220.0" promptText="Default value: 100" />
+      <Label layoutX="1450.0" layoutY="128.0" text="List size" />
+      <RadioButton fx:id="sinRadioButton" layoutX="1414.0" layoutY="740.0" mnemonicParsing="false" text="Sinusoidal Data" toggleGroup="$generateGroup" />
+   </children>
+</Pane>
