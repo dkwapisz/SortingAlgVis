@@ -17,7 +17,8 @@ This app shows how sorting algorithms work. At the moment, the program includes 
 - Selection Sort
 - Shell Sort
 - Heap Sort
-- Radix Sort (doesn't work with sinusoidal numbers because of negative values)
+- Radix Sort
+
 To show how it works, it uses JavaFX's BarCharts.
 
 ## Features
