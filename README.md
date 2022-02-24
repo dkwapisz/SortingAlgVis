@@ -8,7 +8,6 @@
 - [Technologies Used](#technologies-Used)
 - [Screenshots](#Screenshots)
 - [How to open](#how-to-open)
-- [Acknowledgments](#Acknowledgments)
 
 ## General
 This app shows how sorting algorithms work. At the moment, the program includes 6 different sorting methods, such as:
@@ -29,15 +28,20 @@ To show how it works, it uses JavaFX's BarCharts.
 - red and blue cursors that show which numbers are currently iterated  
 
 ## Technologies Used
+- Java
 - JavaFX 16
 - Maven
 - FXML (SceneBuilder)
 
 ## Screenshots
-
+![screenshot1](https://github.com/dkwapisz/SortingAlgVis/blob/main/screenshots/Screenshot_1.png)
+![screenshot2](https://github.com/dkwapisz/SortingAlgVis/blob/main/screenshots/Screenshot_2.png)
+![screenshot3](https://github.com/dkwapisz/SortingAlgVis/blob/main/screenshots/Screenshot_3.png)
 
 ## How to open 
 
-
-## Acknowledgments
-
+### IntelliJ IDEA
+1. Download project via Github
+2. Open using IntelliJ IDEA
+3. Reload Maven Dependencies
+4. Run via App.java class
