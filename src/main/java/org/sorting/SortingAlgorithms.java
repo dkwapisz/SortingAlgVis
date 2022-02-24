@@ -13,13 +13,11 @@ import java.util.ArrayList;
 public class SortingAlgorithms {
 
     private static BubbleSort bubbleSort;
-    private static MergeSort mergeSort;
     private static InsertionSort insertionSort;
     private static SelectionSort selectionSort;
     private static ShellSort shellSort;
     private static HeapSort heapSort;
     private static RadixSort radixSort;
-    private static QuickSort quickSort;
     private static Timeline timelineUpdate;
     private static Timeline timelineSorting;
     private static boolean generated;
@@ -73,19 +71,6 @@ public class SortingAlgorithms {
                     timelineSorting.setCycleCount(Timeline.INDEFINITE);
                     timelineSorting.play();
                     break;
-//                case "QuickSort":
-//                    quickSort = new QuickSort(list, graph);
-//                    timelineSorting = new Timeline(new KeyFrame(Duration.millis(sortingSpeed), e -> quickSort.sort(timelineSorting, 0, list.size() - 1)));
-//                    timelineSorting.setCycleCount(Timeline.INDEFINITE);
-//                    timelineSorting.play();
-//                    break;
-//                case "MergeSort":
-//                    mergeSort = new MergeSort();
-//                    mergeSort.sort(list);
-//                    timelineSorting = new Timeline(new KeyFrame(Duration.millis(sortingSpeed), e -> mergeSort.sort(list)));
-//                    timelineSorting.setCycleCount(Timeline.INDEFINITE);
-//                    timelineSorting.play();
-//                    break;
                 default:
                     break;
             }
@@ -109,8 +94,6 @@ public class SortingAlgorithms {
 //                    graph.getData().get(0).getData().get(i).getNode().setStyle("-fx-bar-fill: black;");
 //                }
 //            }
-
-            //TODO Żeby to działało tylko ifSorting i isSorted
             for (int i = 0; i < list.size(); i++) {
                 graph.getData().get(0).getData().get(i).getNode().setStyle("-fx-bar-fill: white;");
             }
