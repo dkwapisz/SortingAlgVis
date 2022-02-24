@@ -1,5 +1,3 @@
-> README WORK IN PROGRESS
-
 # Sorting Algorithm Visualizer
 > My own project
 ## Table of Contents
